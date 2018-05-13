@@ -5,7 +5,7 @@
 	</div>
 	<div id="page">
 		<div id="content">
-			<h2>Galeria</h2>
+<?php echo readContent(2); ?>
 <a href="/images/img07.jpg" data-lightbox="roadtrip"><img src='images/timg07.jpg'/></a>
 <a href="/images/img08.jpg" data-lightbox="roadtrip"><img src='images/timg08.jpg'/></a>
 <a href="/images/img09.jpg" data-lightbox="roadtrip"><img src='images/timg09.jpg'/></a>

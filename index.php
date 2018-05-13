@@ -5,23 +5,25 @@
 	</div>
 	<div id="page">
 		<div id="content">
-			<h2>Witamy</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
-						<p>Eiusmod tempor incididunt ut labore et dolore magna nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
+<?php echo readContent(1); ?>
+					</div>
 
 		<!-- end #content -->
 		<div id="sidebar">
 			<h2>News list</h2>
-			<div class="news">
-<h3>News1 </h3>
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-			<div class="news">
-<h3>News2 </h3>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-		</div>
+
+				<?php
+					$news=lastNews();
+					foreach ($news as $key => $value) {
+						echo "<div class='news'><h3>";
+						echo $value[1];
+						echo '</h3><span class="date">';
+						echo $value[3].'</span><br>';
+						echo substr($value[2], 0,100).'...<br><br></div>';
+					}
+				?>
+
+
 		<!-- end #sidebar -->
 		<div style="clear: both;">&nbsp;</div>
 	</div>

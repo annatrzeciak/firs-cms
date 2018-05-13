@@ -5,13 +5,8 @@
 	</div>
 	<div id="page">
 		<div id="content">
-			<h2>Kontakt</h2>
-Creativity sp. z o. o.<br>
-ul. Krótka 15/26 <br>
-00-001 Warszawa <br>
-tel. 123-456-789 <br>
-<a href="mailto:creativity@poczta.pl">creativity@poczta.pl</a>
-				</div>
+<?php echo readContent(3); ?>
+						</div>
 
 		<!-- end #content -->
 		<div id="sidebar">

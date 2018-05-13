@@ -526,3 +526,6 @@ blockquote::after{
 .author{
 	text-align:  right;
 }
+.date{
+	color: #c6c6c6;
+}

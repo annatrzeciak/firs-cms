@@ -10,6 +10,9 @@ Version    : 1.0
 Released   : 20120902
 
 -->
+</<?php
+require 'db.php';
+ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="keywords" content="" />
