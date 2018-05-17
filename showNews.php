@@ -6,6 +6,7 @@ if(!isset($_SESSION['user_id'])){
 }
 if(($_SESSION['user_id']>0)){
   require('adminMenu.php');
+  
 
 }else{
   require('adminLogin.php');
